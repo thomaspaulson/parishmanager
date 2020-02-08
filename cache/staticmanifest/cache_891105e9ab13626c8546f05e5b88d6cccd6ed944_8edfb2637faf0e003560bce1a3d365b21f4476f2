@@ -1,1 +1,0 @@
-a:1:{s:13:"JobController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:8:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:7:"add_job";i:4;s:10:"AddJobForm";i:5;s:8:"edit_job";i:6;s:11:"EditJobForm";i:7;s:13:"export_to_csv";}}}}

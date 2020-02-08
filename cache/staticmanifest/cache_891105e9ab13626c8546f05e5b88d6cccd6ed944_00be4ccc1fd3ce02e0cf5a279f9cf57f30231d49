@@ -1,1 +1,0 @@
-a:1:{s:17:"PasswordValidator";a:1:{s:24:"character_strength_tests";a:2:{s:6:"access";i:314;s:5:"value";a:4:{s:9:"lowercase";s:7:"/[a-z]/";s:9:"uppercase";s:7:"/[A-Z]/";s:6:"digits";s:7:"/[0-9]/";s:11:"punctuation";s:14:"/[^A-Za-z0-9]/";}}}}

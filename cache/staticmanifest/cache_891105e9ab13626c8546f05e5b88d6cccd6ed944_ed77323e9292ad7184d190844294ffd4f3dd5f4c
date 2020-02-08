@@ -1,1 +1,0 @@
-a:1:{s:17:"TreeDropdownField";a:3:{s:12:"url_handlers";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:12:"$Action!/$ID";s:7:"$Action";}}s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:1:{i:0;s:4:"tree";}}s:20:"node_threshold_total";a:2:{s:6:"access";i:314;s:5:"value";i:30;}}}

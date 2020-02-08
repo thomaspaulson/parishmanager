@@ -1,1 +1,0 @@
-a:1:{s:21:"AgricultureController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:8:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:15:"add_agriculture";i:4;s:18:"AddAgricultureForm";i:5;s:16:"edit_agriculture";i:6;s:19:"EditAgricultureForm";i:7;s:13:"export_to_csv";}}}}

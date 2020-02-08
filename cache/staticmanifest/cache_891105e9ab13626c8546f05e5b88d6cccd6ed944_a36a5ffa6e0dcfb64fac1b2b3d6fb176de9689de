@@ -1,1 +1,0 @@
-a:1:{s:10:"Controller";a:3:{s:16:"controller_stack";a:2:{s:6:"access";i:315;s:5:"value";a:0:{}}s:12:"url_handlers";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:21:"$Action//$ID/$OtherID";s:12:"handleAction";}}s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:2:{i:0;s:12:"handleAction";i:1;s:11:"handleIndex";}}}}

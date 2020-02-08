@@ -1,1 +1,0 @@
-a:1:{s:13:"Authenticator";a:2:{s:14:"authenticators";a:2:{s:6:"access";i:314;s:5:"value";a:1:{i:0;s:19:"MemberAuthenticator";}}s:21:"default_authenticator";a:2:{s:6:"access";i:314;s:5:"value";s:19:"MemberAuthenticator";}}}

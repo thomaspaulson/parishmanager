@@ -1,1 +1,0 @@
-a:1:{s:5:"Money";a:1:{s:12:"composite_db";a:2:{s:6:"access";i:314;s:5:"value";a:2:{s:8:"Currency";s:10:"Varchar(3)";s:6:"Amount";s:13:"Decimal(19,4)";}}}}

@@ -1,1 +1,0 @@
-a:1:{s:11:"ParishAdmin";a:3:{s:14:"managed_models";a:2:{s:6:"access";i:314;s:5:"value";a:4:{i:0;s:6:"Family";i:1;s:12:"FamilyMember";i:2;s:6:"Parish";i:3;s:14:"CommunityGroup";}}s:11:"url_segment";a:2:{s:6:"access";i:314;s:5:"value";s:8:"parishes";}s:10:"menu_title";a:2:{s:6:"access";i:314;s:5:"value";s:9:"My Parish";}}}

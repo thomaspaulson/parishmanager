@@ -1,1 +1,0 @@
-a:1:{s:11:"StringField";a:1:{s:7:"casting";a:2:{s:6:"access";i:314;s:5:"value";a:7:{s:15:"LimitCharacters";s:4:"Text";s:28:"LimitCharactersToClosestWord";s:4:"Text";s:14:"LimitWordCount";s:4:"Text";s:17:"LimitWordCountXML";s:8:"HTMLText";s:9:"LowerCase";s:4:"Text";s:9:"UpperCase";s:4:"Text";s:6:"NoHTML";s:4:"Text";}}}}

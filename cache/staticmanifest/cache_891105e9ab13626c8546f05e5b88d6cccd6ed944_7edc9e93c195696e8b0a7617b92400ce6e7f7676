@@ -1,1 +1,0 @@
-a:1:{s:16:"HealthController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:8:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:10:"add_health";i:4;s:13:"AddHealthForm";i:5;s:11:"edit_health";i:6;s:14:"EditHealthForm";i:7;s:13:"export_to_csv";}}}}

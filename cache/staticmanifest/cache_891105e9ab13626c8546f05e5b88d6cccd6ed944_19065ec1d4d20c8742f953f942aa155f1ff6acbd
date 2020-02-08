@@ -1,1 +1,0 @@
-a:1:{s:7:"DBField";a:3:{s:11:"escape_type";a:2:{s:6:"access";i:314;s:5:"value";s:3:"raw";}s:27:"default_search_filter_class";a:2:{s:6:"access";i:314;s:5:"value";s:18:"PartialMatchFilter";}s:14:"auto_indexable";a:2:{s:6:"access";i:314;s:5:"value";b:1;}}}

@@ -1,1 +1,0 @@
-a:1:{s:12:"SQLFormatter";a:1:{s:21:"newline_before_tokens";a:2:{s:6:"access";i:315;s:5:"value";a:13:{i:0;s:6:"SELECT";i:1;s:6:"UPDATE";i:2;s:6:"INSERT";i:3;s:6:"DELETE";i:4;s:4:"FROM";i:5;s:10:"INNER JOIN";i:6;s:9:"FULL JOIN";i:7;s:9:"LEFT JOIN";i:8;s:10:"RIGHT JOIN";i:9;s:5:"WHERE";i:10;s:8:"ORDER BY";i:11;s:8:"GROUP BY";i:12;s:5:"LIMIT";}}}}

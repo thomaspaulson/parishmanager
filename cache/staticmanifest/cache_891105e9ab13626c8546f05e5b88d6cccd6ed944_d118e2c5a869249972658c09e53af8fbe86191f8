@@ -1,1 +1,0 @@
-a:1:{s:22:"LeftAndMainTest_Object";a:3:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:3:{s:5:"Title";s:7:"Varchar";s:10:"URLSegment";s:7:"Varchar";s:4:"Sort";s:3:"Int";}}s:12:"default_sort";a:2:{s:6:"access";i:314;s:5:"value";s:6:""Sort"";}s:10:"extensions";a:2:{s:6:"access";i:314;s:5:"value";a:1:{i:0;s:9:"Hierarchy";}}}}

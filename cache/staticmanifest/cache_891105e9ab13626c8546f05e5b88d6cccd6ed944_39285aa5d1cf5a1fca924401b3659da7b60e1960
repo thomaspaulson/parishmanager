@@ -1,1 +1,0 @@
-a:1:{s:9:"DateField";a:1:{s:14:"default_config";a:2:{s:6:"access";i:314;s:5:"value";a:9:{s:12:"showcalendar";b:0;s:8:"jslocale";N;s:9:"dmyfields";b:0;s:12:"dmyseparator";s:44:"&nbsp;<span class="separator">/</span>&nbsp;";s:15:"dmyplaceholders";b:1;s:10:"dateformat";N;s:15:"datavalueformat";s:10:"yyyy-MM-dd";s:3:"min";N;s:3:"max";N;}}}}

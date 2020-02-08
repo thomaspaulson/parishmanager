@@ -1,1 +1,0 @@
-a:1:{s:19:"AdminRootController";a:3:{s:8:"url_base";a:2:{s:6:"access";i:314;s:5:"value";s:5:"admin";}s:13:"default_panel";a:2:{s:6:"access";i:314;s:5:"value";s:13:"SecurityAdmin";}s:6:"_rules";a:2:{s:6:"access";i:314;s:5:"value";N;}}}

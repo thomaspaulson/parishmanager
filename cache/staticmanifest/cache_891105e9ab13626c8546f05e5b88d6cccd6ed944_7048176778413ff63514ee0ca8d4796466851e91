@@ -1,1 +1,0 @@
-a:1:{s:19:"ApplianceController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:8:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:13:"add_appliance";i:4;s:16:"AddApplianceForm";i:5;s:14:"edit_appliance";i:6;s:17:"EditApplianceForm";i:7;s:13:"export_to_csv";}}}}

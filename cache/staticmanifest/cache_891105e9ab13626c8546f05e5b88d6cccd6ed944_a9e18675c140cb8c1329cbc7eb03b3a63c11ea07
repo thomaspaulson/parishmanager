@@ -1,1 +1,0 @@
-a:1:{s:14:"RequestHandler";a:4:{s:11:"url_segment";a:2:{s:6:"access";i:314;s:5:"value";N;}s:12:"url_handlers";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:7:"$Action";s:7:"$Action";}}s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";N;}s:23:"require_allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";b:1;}}}

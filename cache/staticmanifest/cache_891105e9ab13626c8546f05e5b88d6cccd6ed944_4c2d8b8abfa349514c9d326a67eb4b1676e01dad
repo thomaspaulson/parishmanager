@@ -1,1 +1,0 @@
-a:1:{s:16:"HTTPCacheControl";a:2:{s:4:"inst";a:2:{s:6:"access";i:314;s:5:"value";N;}s:18:"allowed_directives";a:2:{s:6:"access";i:314;s:5:"value";a:9:{i:0;s:6:"public";i:1;s:7:"private";i:2;s:8:"no-cache";i:3;s:7:"max-age";i:4;s:8:"s-maxage";i:5;s:15:"must-revalidate";i:6;s:16:"proxy-revalidate";i:7;s:8:"no-store";i:8;s:12:"no-transform";}}}}

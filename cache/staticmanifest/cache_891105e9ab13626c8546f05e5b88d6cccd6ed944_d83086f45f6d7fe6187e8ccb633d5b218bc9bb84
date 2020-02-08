@@ -1,1 +1,0 @@
-a:1:{s:16:"GroupsController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:8:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:10:"add_groups";i:4;s:13:"AddGroupsForm";i:5;s:11:"edit_groups";i:6;s:14:"EditGroupsForm";i:7;s:13:"export_to_csv";}}}}
