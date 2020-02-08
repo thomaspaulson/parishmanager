@@ -1,0 +1,1 @@
+a:1:{s:19:"MyAccountController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:4:{i:0;s:5:"index";i:1;s:4:"edit";i:2;s:17:"EditMyAccountForm";i:3;s:6:"thanks";}}}}

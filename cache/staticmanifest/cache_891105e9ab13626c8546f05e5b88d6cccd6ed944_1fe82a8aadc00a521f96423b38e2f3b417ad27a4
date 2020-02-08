@@ -1,0 +1,1 @@
+a:1:{s:11:"ShiftedFrom";a:3:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:3:{s:6:"Status";s:7:"Boolean";s:9:"FromWhere";s:12:"Varchar(100)";s:6:"Reason";s:12:"Varchar(255)";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:6:"Family";s:6:"Family";}}s:14:"summary_fields";a:2:{s:6:"access";i:314;s:5:"value";a:3:{i:0;s:7:"Shifted";i:1;s:9:"FromWhere";i:2;s:6:"Reason";}}}}

@@ -1,0 +1,1 @@
+a:4:{s:7:"classes";a:1:{i:0;a:3:{s:9:"className";s:16:"SS_ListDecorator";s:7:"extends";a:1:{i:0;s:12:"ViewableData";}s:10:"interfaces";a:7:{i:0;s:7:"SS_List";i:1;s:1:",";i:2;s:11:"SS_Sortable";i:3;s:1:",";i:4;s:13:"SS_Filterable";i:5;s:1:",";i:6;s:12:"SS_Limitable";}}}s:10:"interfaces";a:0:{}s:9:"namespace";s:0:"";s:7:"imports";a:0:{}}

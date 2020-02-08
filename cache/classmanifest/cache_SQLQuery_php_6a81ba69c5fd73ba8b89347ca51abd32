@@ -1,0 +1,1 @@
+a:4:{s:7:"classes";a:2:{i:0;a:2:{s:9:"className";s:8:"SQLQuery";s:7:"extends";a:1:{i:0;s:9:"SQLSelect";}}i:1;a:1:{s:9:"className";s:26:"SQLQuery_ParameterInjector";}}s:10:"interfaces";a:0:{}s:9:"namespace";s:0:"";s:7:"imports";a:0:{}}

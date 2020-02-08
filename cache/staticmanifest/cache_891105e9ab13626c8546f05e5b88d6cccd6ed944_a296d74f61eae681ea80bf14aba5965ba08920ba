@@ -1,0 +1,1 @@
+a:1:{s:11:"CMSSecurity";a:3:{s:7:"casting";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:5:"Title";s:8:"HTMLText";}}s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:2:{i:0;s:9:"LoginForm";i:1;s:7:"success";}}s:14:"reauth_enabled";a:2:{s:6:"access";i:314;s:5:"value";b:1;}}}

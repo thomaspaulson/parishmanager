@@ -1,0 +1,1 @@
+a:1:{s:14:"FileNameFilter";a:2:{s:26:"default_use_transliterator";a:2:{s:6:"access";i:314;s:5:"value";b:1;}s:20:"default_replacements";a:2:{s:6:"access";i:314;s:5:"value";a:5:{s:4:"/\s/";s:1:"-";s:3:"/_/";s:1:"-";s:19:"/[^A-Za-z0-9+.\-]+/";s:0:"";s:10:"/[\-]{2,}/";s:1:"-";s:11:"/^[\.\-_]+/";s:0:"";}}}}

@@ -1,0 +1,92 @@
+@import "settings";
+@import "foundation";
+body{ 
+ .header{
+	background-color:$oil;
+	h1.login{
+		text-align: center;
+		a{
+			color: #ffffff;
+			display: block;
+			font-weight: normal;
+			padding: 0 0.9375rem;		
+		}
+	}
+ }
+ 
+   .main{
+	  margin-top: rem-calc(10);
+	  min-height: rem-calc(250);
+	  #content{
+		  float: right;
+		  table{
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  border: 1px solid #bbb;
+			  width:100%;
+			  td,th{
+				  //border-top: 1px solid #ddd;
+				  //padding: 4px 8px;
+			  }
+		  }
+	  }
+	  #sidebar{
+		  float: left;
+		  margin-top: rem-calc(15);
+	  }
+	
+		ul.accordion{
+			margin-left: 0;
+			margin-bottom: rem-calc(16);
+		}
+	}
+
+   .footer{
+	  text-align:center;
+	  font-size: rem-calc(12);
+   }
+
+  .size-12 { font-size: 12px; }
+
+  .size-14 { font-size: 14px; }
+
+  .size-16 { font-size: 16px; }
+
+  .size-18 { font-size: 18px; }
+
+  .size-21 { font-size: 21px; }
+
+  .size-24 { font-size: 24px; }
+
+  .size-36 { font-size: 36px; }
+
+  .size-48 { font-size: 48px; }
+
+  .size-60 { font-size: 60px; }
+
+  .size-72 { font-size: 72px; }
+  .size-72 { font-size: 72px; }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  body{
+	.main {
+	  margin-top: rem-calc(10);
+	  min-height: rem-calc(250);
+	  #sidebar{
+		float: left;
+	  }
+	  #content {
+		float:left;
+		table {
+		  overflow-x: auto;
+		  width: auto;
+		  display: block;
+		}
+	  }
+	}
+  }
+
+}

@@ -1,0 +1,35 @@
+---
+After: framework
+---
+Director:
+  rules:
+    '': 'HomeController',
+    'myparish//$Action/$ID/$Name': 'MyParishController',
+    'parish//$Action/$ID/$Name': 'ParishController',
+    'family//$Action/$ID/$Name': 'FamilyController'
+    'housing//$Action/$ID/$Name': 'HousingController'
+    'house//$Action/$ID/$Name': 'HouseController'
+    'land//$Action/$ID/$Name': 'LandController'
+    'shifted-from//$Action/$ID/$Name': 'ShiftedFromController'
+    'occupation//$Action/$ID/$Name': 'OccupationController'
+    'agriculture//$Action/$ID/$Name': 'AgricultureController'
+    'business//$Action/$ID/$Name': 'BusinessController'
+    'monthly//$Action/$ID/$Name': 'MonthlyController'
+    'monthlyincome//$Action/$ID/$Name': 'MonthlyIncomeController'
+    'monthlyexpense//$Action/$ID/$Name': 'MonthlyExpenseController'
+    'other-details//$Action/$ID/$Name': 'OtherDetailsController'
+    'vehicle//$Action/$ID/$Name': 'VehicleController'
+    'appliance//$Action/$ID/$Name': 'ApplianceController'
+    'myaccount//$Action/$ID/$Name': 'MyAccountController'
+    'otherfacility//$Action/$ID/$Name': 'OtherFacilityController'
+    'media//$Action/$ID/$Name': 'MediaController'
+    'catholic-magazine//$Action/$ID/$Name': 'CatholicMagazineController'
+    'financial//$Action/$ID/$Name': 'FinancialController'
+    'loan//$Action/$ID/$Name': 'LoanController'
+    'saving//$Action/$ID/$Name': 'SavingController'
+    'members//$Action/$ID/$Name': 'FamilyMemberController'
+    'education//$Action/$ID/$Name': 'EducationController'
+    'job//$Action/$ID/$Name': 'JobController'
+    'health//$Action/$ID/$Name': 'HealthController'
+    'groups//$Action/$ID/$Name': 'GroupsController'
+    'achievement//$Action/$ID/$Name': 'AchievementController'

@@ -1,0 +1,1 @@
+a:1:{s:22:"ModelAdminTest_Contact";a:2:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:2:{s:4:"Name";s:7:"Varchar";s:5:"Phone";s:7:"Varchar";}}s:14:"summary_fields";a:2:{s:6:"access";i:314;s:5:"value";a:2:{s:4:"Name";s:4:"Name";s:5:"Phone";s:5:"Phone";}}}}

@@ -1,0 +1,1 @@
+a:1:{s:11:"Achievement";a:2:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:4:{s:5:"Title";s:12:"Varchar(255)";s:8:"Category";s:12:"Varchar(100)";s:9:"FromWhere";s:12:"Varchar(100)";s:4:"Year";s:3:"Int";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:12:"FamilyMember";s:12:"FamilyMember";}}}}

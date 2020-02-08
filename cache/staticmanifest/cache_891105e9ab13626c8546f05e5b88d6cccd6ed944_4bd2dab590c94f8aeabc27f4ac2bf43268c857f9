@@ -1,0 +1,1 @@
+a:1:{s:31:"GridFieldDetailForm_ItemRequest";a:2:{s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:3:{i:0;s:4:"edit";i:1;s:4:"view";i:2;s:12:"ItemEditForm";}}s:12:"url_handlers";a:2:{s:6:"access";i:314;s:5:"value";a:2:{s:8:"$Action!";s:7:"$Action";s:0:"";s:4:"edit";}}}}

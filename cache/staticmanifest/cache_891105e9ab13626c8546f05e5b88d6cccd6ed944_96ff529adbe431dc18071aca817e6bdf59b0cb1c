@@ -1,0 +1,1 @@
+a:1:{s:13:"MonthlyIncome";a:3:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:4:{s:4:"Land";s:3:"Int";s:3:"Job";s:3:"Int";s:6:"Others";s:3:"Int";s:5:"Total";s:3:"Int";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:6:"Family";s:6:"Family";}}s:14:"summary_fields";a:2:{s:6:"access";i:314;s:5:"value";a:4:{i:0;s:4:"Land";i:1;s:3:"Job";i:2;s:6:"Others";i:3;s:5:"Total";}}}}

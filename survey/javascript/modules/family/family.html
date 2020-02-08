@@ -1,0 +1,35 @@
+<ul>
+	<li ng-repeat="family in families.items">{{family.Name}}</li>
+</ul	
+                <table>
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Family</th>
+                        <th>Contact Person</th>
+                        <th>Contact No</th>
+                        <th>Block/Unit/Family</th>
+                        <th>House No</th>
+						<th width="100"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                
+                    <tr  ng-repeat="family in families.items">
+                        <td>{{family.ID}}</td>
+                        <td>{{family.Name}}<br>{{family.Address}}, {{family.Pincode}}</td>
+                        <td><% if $Contact %>$Contact.Name<% end_if %></td>
+                        <td><% if $Contact %>$Contact.Mobile<% end_if %></td>
+                        <td>{$BlockNo}/{$UnitNo}/{$FamilyNo}</td>
+                        <td>$HouseNo</td>
+						<td>
+							<a href="{$Link('view')}?&BackURL=$Top.RequestedURL" title="View $Name"><i class="fi-page"></i></a>
+							| 
+							<a href="{$Link('edit-family')}?&BackURL=$Top.RequestedURL" title="Edit $Name"><i class="fi-page-edit"></i></a>
+							|
+							<a href="{$Link('delete-family')}?&BackURL=$Top.RequestedURL" title="Delete $Name" onclick="return confirm('Are you sure?');"><i class="fi-page-delete"></i></a>
+						</td>
+                    </tr>
+                <% end_loop %>
+                    </tbody>
+                </table>

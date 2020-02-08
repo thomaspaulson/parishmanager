@@ -1,0 +1,1 @@
+a:1:{s:5:"Email";a:5:{s:11:"admin_email";a:2:{s:6:"access";i:314;s:5:"value";s:0:"";}s:18:"send_all_emails_to";a:2:{s:6:"access";i:314;s:5:"value";N;}s:20:"send_all_emails_from";a:2:{s:6:"access";i:314;s:5:"value";N;}s:17:"bcc_all_emails_to";a:2:{s:6:"access";i:314;s:5:"value";N;}s:16:"cc_all_emails_to";a:2:{s:6:"access";i:314;s:5:"value";N;}}}

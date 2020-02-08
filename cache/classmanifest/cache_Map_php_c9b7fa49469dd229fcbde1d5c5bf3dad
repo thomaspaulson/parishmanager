@@ -1,0 +1,1 @@
+a:4:{s:7:"classes";a:2:{i:0;a:2:{s:9:"className";s:6:"SS_Map";s:10:"interfaces";a:5:{i:0;s:11:"ArrayAccess";i:1;s:1:",";i:2;s:9:"Countable";i:3;s:1:",";i:4;s:17:"IteratorAggregate";}}i:1;a:2:{s:9:"className";s:15:"SS_Map_Iterator";s:10:"interfaces";a:1:{i:0;s:8:"Iterator";}}}s:10:"interfaces";a:0:{}s:9:"namespace";s:0:"";s:7:"imports";a:0:{}}

@@ -1,0 +1,64 @@
+---
+Name: myparish
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+LeftAndMain:
+  application_name: 'Parish Manager'
+FamilyMember:
+  Gender:
+   m: Male
+   f: Female
+  MartialStatus:
+    m: Married
+    s: Single
+    w: Widow/Widower
+    d: Divorced
+    o: Others
+    p: Priests    
+    n: Sisters
+House:
+  CardType:
+    apl: APL
+    bpl: BPL
+Education:
+  Course:
+   pri: 1-12
+   iti: ITI
+   poly: Poly/Dipolma
+   deg: Degree
+   ttc: TTC
+   bed: B.Ed
+   pg: PG
+   set: SET
+   ugc: UGC-NET
+   prof: 'Professional Course'
+   mphl: 'MPhil/Phd/PDF'
+   cat: 'Catechism (1-12)'
+   oth: 'Any Other'
+Job:
+  SalaryCode:
+    vl: '<=4000'
+    lo: '4001-8000'
+    av: '8001-15000'
+    me: '15001-25000'
+    am: '25001-50000'
+    up: '>50000'
+  LocationCode:
+    in: 'within kerala'        
+    out: 'outside kerala'
+    fr: 'abroad'
+  TypeCode:
+    'govt': 'Government'
+    'semi-govt': 'Semi-Goverment'
+    'private': 'Private sector'
+    'self': 'Self-Employed'
+    'construction': 'Construction'
+    'fishing': 'Fishing'
+    'carpentery': 'Carpentery'
+    'coir': 'Coir Industry'
+    'business': 'Business'
+    'homemaker': 'Home-Maker'    
+    'others': 'Others'
+    'unemployed': 'UnEmployed'

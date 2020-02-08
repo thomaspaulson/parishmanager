@@ -1,0 +1,8 @@
+LeftAndMain:
+  extensions:
+    - MyLeftAndMainExtension
+#
+Member:
+  extensions:
+    - MyMemberExtension
+  

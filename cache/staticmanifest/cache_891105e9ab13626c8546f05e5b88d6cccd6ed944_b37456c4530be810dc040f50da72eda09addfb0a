@@ -1,0 +1,1 @@
+a:1:{s:7:"Contact";a:3:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:3:{s:4:"Name";s:12:"Varchar(100)";s:5:"Email";s:12:"Varchar(100)";s:6:"Mobile";s:12:"Varchar(100)";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:6:"Family";s:6:"Family";}}s:14:"summary_fields";a:2:{s:6:"access";i:314;s:5:"value";a:3:{i:0;s:4:"Name";i:1;s:5:"Email";i:2;s:6:"Mobile";}}}}

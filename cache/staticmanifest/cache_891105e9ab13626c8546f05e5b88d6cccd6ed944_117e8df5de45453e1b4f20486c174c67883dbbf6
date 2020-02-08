@@ -1,0 +1,27 @@
+a:1:{s:15:"ShortcodeParser";a:7:{s:9:"instances";a:2:{s:6:"access";i:315;s:5:"value";a:0:{}}s:15:"active_instance";a:2:{s:6:"access";i:315;s:5:"value";s:7:"default";}s:12:"marker_class";a:2:{s:6:"access";i:315;s:5:"value";s:21:"--ss-shortcode-marker";}s:20:"block_level_elements";a:2:{s:6:"access";i:315;s:5:"value";a:29:{i:0;s:7:"address";i:1;s:7:"article";i:2;s:5:"aside";i:3;s:5:"audio";i:4;s:10:"blockquote";i:5;s:6:"canvas";i:6;s:2:"dd";i:7;s:3:"div";i:8;s:2:"dl";i:9;s:8:"fieldset";i:10;s:10:"figcaption";i:11;s:6:"figure";i:12;s:6:"footer";i:13;s:4:"form";i:14;s:2:"h1";i:15;s:2:"h2";i:16;s:2:"h3";i:17;s:2:"h4";i:18;s:2:"h5";i:19;s:2:"h6";i:20;s:6:"header";i:21;s:6:"hgroup";i:22;s:2:"ol";i:23;s:6:"output";i:24;s:1:"p";i:25;s:3:"pre";i:26;s:7:"section";i:27;s:5:"table";i:28;s:2:"ul";}}s:6:"attrrx";a:2:{s:6:"access";i:315;s:5:"value";s:179:"
+		([^\s\/'"=,]+)       # Name
+		\s* = \s*
+		(?:
+			(?:'([^']+)') | # Value surrounded by '
+			(?:"([^"]+)")    | # Value surrounded by "
+			([^\s,\]]+)          # Bare value
+		)
+";}s:5:"tagrx";a:2:{s:6:"access";i:315;s:5:"value";s:252:"
+		# HTML Tag
+		<(?<element>(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+)>
+
+		| # Opening tag
+		(?<oesc>\[?)
+		\[
+			(?<open>\w+)
+			[\s,]*
+			(?<attrs> (?: %s [\s,]*)* )
+		\/?\]
+		(?<cesc1>\]?)
+
+		| # Closing tag
+		\[\/
+			(?<close>\w+)
+		\]
+		(?<cesc2>\]?)
+";}s:14:"error_behavior";a:2:{s:6:"access";i:316;s:5:"value";s:5:"leave";}}}

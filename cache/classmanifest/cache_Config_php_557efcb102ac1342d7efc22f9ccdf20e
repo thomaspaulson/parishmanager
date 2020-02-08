@@ -1,0 +1,1 @@
+a:4:{s:7:"classes";a:4:{i:0;a:1:{s:9:"className";s:6:"Config";}i:1;a:1:{s:9:"className";s:10:"Config_LRU";}i:2;a:1:{s:9:"className";s:15:"Config_MemCache";}i:3;a:1:{s:9:"className";s:15:"Config_ForClass";}}s:10:"interfaces";a:0:{}s:9:"namespace";s:0:"";s:7:"imports";a:0:{}}

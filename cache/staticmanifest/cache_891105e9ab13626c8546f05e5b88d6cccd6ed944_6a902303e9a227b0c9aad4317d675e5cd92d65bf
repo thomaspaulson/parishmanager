@@ -1,0 +1,1 @@
+a:1:{s:23:"HtmlEditorField_Toolbar";a:3:{s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:4:{i:0;s:8:"LinkForm";i:1;s:9:"MediaForm";i:2;s:8:"viewfile";i:3;s:10:"getanchors";}}s:24:"fileurl_scheme_whitelist";a:2:{s:6:"access";i:314;s:5:"value";a:2:{i:0;s:4:"http";i:1;s:5:"https";}}s:24:"fileurl_domain_whitelist";a:2:{s:6:"access";i:314;s:5:"value";a:0:{}}}}

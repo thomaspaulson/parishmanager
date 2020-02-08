@@ -1,0 +1,1 @@
+a:1:{s:15:"HouseController";a:1:{s:15:"allowed_actions";a:2:{s:6:"access";i:316;s:5:"value";a:9:{i:0;s:5:"index";i:1;s:6:"search";i:2;s:9:"printlist";i:3;s:9:"add_house";i:4;s:12:"AddHouseForm";i:5;s:10:"edit_house";i:6;s:13:"EditHouseForm";i:7;s:4:"view";i:8;s:13:"export_to_csv";}}}}

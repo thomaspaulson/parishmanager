@@ -1,0 +1,1 @@
+a:1:{s:21:"ModelAdminTest_Player";a:2:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:2:{s:4:"Name";s:7:"Varchar";s:8:"Position";s:7:"Varchar";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:7:"Contact";s:22:"ModelAdminTest_Contact";}}}}

@@ -1,0 +1,1 @@
+a:1:{s:11:"UploadField";a:2:{s:15:"allowed_actions";a:2:{s:6:"access";i:314;s:5:"value";a:5:{i:0;s:6:"upload";i:1;s:6:"attach";i:2;s:10:"handleItem";i:3;s:12:"handleSelect";i:4;s:10:"fileexists";}}s:12:"url_handlers";a:2:{s:6:"access";i:314;s:5:"value";a:3:{s:8:"item/$ID";s:10:"handleItem";s:6:"select";s:12:"handleSelect";s:8:"$Action!";s:7:"$Action";}}}}

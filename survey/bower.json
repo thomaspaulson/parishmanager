@@ -1,0 +1,11 @@
+{
+  "name": "survey",
+  "homepage": "https://github.com/lastgrade/mysurvey",
+  "authors": [
+    "lastgrade <lastgrade@outlook.com>"
+  ],
+  "description": "custom survey application",
+  "main": "",
+  "license": "MIT",
+  "private": true
+}

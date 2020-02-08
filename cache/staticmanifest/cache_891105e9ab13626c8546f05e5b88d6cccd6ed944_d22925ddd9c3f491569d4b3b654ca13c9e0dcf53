@@ -1,0 +1,1 @@
+a:1:{s:20:"CMSProfileController";a:4:{s:11:"url_segment";a:2:{s:6:"access";i:314;s:5:"value";s:9:"myprofile";}s:10:"menu_title";a:2:{s:6:"access";i:314;s:5:"value";s:10:"My Profile";}s:25:"required_permission_codes";a:2:{s:6:"access";i:314;s:5:"value";b:0;}s:10:"tree_class";a:2:{s:6:"access";i:314;s:5:"value";s:6:"Member";}}}

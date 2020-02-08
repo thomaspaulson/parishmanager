@@ -1,0 +1,1 @@
+a:1:{s:6:"Talent";a:3:{s:2:"db";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:6:"Remark";s:4:"Text";}}s:7:"has_one";a:2:{s:6:"access";i:314;s:5:"value";a:1:{s:6:"Family";s:6:"Family";}}s:14:"summary_fields";a:2:{s:6:"access";i:314;s:5:"value";a:1:{i:0;s:6:"Remark";}}}}

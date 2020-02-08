@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title> &raquo; My Parish</title>
+    
+    
+    <script src="js/modernizr.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/app.css?m=1451278295" />
+<link rel="stylesheet" type="text/css" href="css/style.css?m=1451278295" />
+</head>
+  <body>
+
+	<header class="header">
+
+      <div class="row">
+          <div class="large-4 large-centered columns">
+
+                  <h1 class="login"><a href="#">Cochin Diocese</a></h1>
+
+          </div>
+      </div>
+
+	</header>	
+		
+
+
+    <div class="row">
+      <div class="large-6 large-centered columns">
+        
+<form id="MemberLoginForm_LoginForm" action="/diocese-survey/Security/LoginForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="MemberLoginForm_LoginForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<input type="hidden" name="AuthenticationMethod" value="MemberAuthenticator" class="hidden" id="MemberLoginForm_LoginForm_AuthenticationMethod" />
+
+		
+			<div id="MemberLoginForm_LoginForm_Email_Holder" class="field text">
+	<label for="MemberLoginForm_LoginForm_Email">Email</label>
+	<div class="middleColumn">
+		<input type="text" name="Email" class="text" id="MemberLoginForm_LoginForm_Email" required="required" aria-required="true" />
+	</div>
+	
+	
+	
+</div>
+
+		
+			<div id="MemberLoginForm_LoginForm_Password_Holder" class="field text password">
+	<label for="MemberLoginForm_LoginForm_Password">Password</label>
+	<div class="middleColumn">
+		<input type="password" name="Password" class="text password" id="MemberLoginForm_LoginForm_Password" required="required" aria-required="true" autocomplete="off" />
+	</div>
+	
+	
+	
+</div>
+
+		
+			<div id="MemberLoginForm_LoginForm_Remember_Holder" class="field checkbox">
+	<input type="checkbox" name="Remember" value="1" class="checkbox" id="MemberLoginForm_LoginForm_Remember" />
+	<label class="right" for="MemberLoginForm_LoginForm_Remember">Remember me next time?</label>
+	
+	
+</div>
+
+		
+			<input type="hidden" name="BackURL" value="/diocese-survey/admin/security/EditForm/field/Groups/item/3/edit" class="hidden" id="MemberLoginForm_LoginForm_BackURL" />
+
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+				
+			
+	<input type="submit" name="action_dologin" value="Log in" class="action button" id="MemberLoginForm_LoginForm_action_dologin" />
+
+			
+				
+			<p id="ForgotPassword"><a href="Security/lostpassword">I've lost my password</a></p>			
+		
+	</div>
+	
+
+</form>
+
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="large-12 columns">
+                Copyrights  2016 &copy;  Diocese of Cochin
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">//<![CDATA[
+			(function() {
+				var el = document.getElementById("MemberLoginForm_LoginForm_Email");
+				if(el && el.focus && (typeof jQuery == 'undefined' || jQuery(el).is(':visible'))) el.focus();
+			})();
+
+//]]></script><script src="js/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

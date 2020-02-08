@@ -1,0 +1,1 @@
+a:1:{s:9:"BasicAuth";a:3:{s:21:"entire_site_protected";a:2:{s:6:"access";i:314;s:5:"value";b:0;}s:26:"entire_site_protected_code";a:2:{s:6:"access";i:314;s:5:"value";s:5:"ADMIN";}s:29:"entire_site_protected_message";a:2:{s:6:"access";i:314;s:5:"value";s:46:"SilverStripe test website. Use your CMS login.";}}}
