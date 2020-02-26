@@ -54,8 +54,7 @@ class FamilyController extends SiteController
 		}		
 		
 		$this->title = 'Listing family';
-		$this->list = $this->Results();		
-		
+		$this->list = $this->Results();				
         return $this->renderWith(array('Family_listall', 'Angular'));
     }
 

@@ -11,3 +11,5 @@ _ss_environment.php
 /assets/
 /siteconfig/
 /reports/
+/themes/default/node_modules/
+/sql/

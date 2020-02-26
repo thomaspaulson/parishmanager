@@ -1,16 +1,35 @@
 {
-  "name": "foundation-trail",
+  "name": "foundation-sites-template",
   "version": "1.0.0",
-  "description": "testing foundation with gulp",
-  "main": "index.js",
+  "description": "Basic template for a new Foundation for Sites project.",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp sass"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ZURB <foundation@zurb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zurb/foundation-sites/issues",
+    "email": "foundation@zurb.com"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.6.0",
+    "jquery": ">=3.0.0",
+    "motion-ui": "~2.0.0",
+    "what-input": "^5.1.2"
+  },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.1.1",
-    "gulp-watch": "^4.3.5"
-  }
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.18.13",
+    "gulp": "^4.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-sites-template.git"
+  },
+  "private": true
 }

@@ -21,8 +21,8 @@
 </head>
 <body onload="window.print();">
 
-<h3>Diocese of Cochin - My Parish</h3>
-<% if $Title %><h5>$Title - Survey Report</h5><% end_if %> 
+<h3>My Parish</h3>
+<% if $Title %><h5>$Title</h5><% end_if %> 
 		$Layout
 
 <p>

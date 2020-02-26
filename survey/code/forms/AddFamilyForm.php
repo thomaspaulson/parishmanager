@@ -69,9 +69,9 @@ class AddFamilyForm extends BaseForm{
     public function getFormActions() {
         $actions = parent::getFormActions();
         $actions->first()->setTitle('Create');
-        $cancel = FormAction::create('doCancel', 'Cancel')->setUseButtonTag(true);
-        $cancel->addExtraClass('secondary');
-        $actions->push($cancel);
+        // $cancel = FormAction::create('doCancel', 'Cancel')->setUseButtonTag(true);
+        // $cancel->addExtraClass('secondary');
+        // $actions->push($cancel);
         return $actions;
     }
 

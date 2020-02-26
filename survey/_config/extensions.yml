@@ -1,7 +1,12 @@
+---
+Name: myparish
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
 LeftAndMain:
   extensions:
     - MyLeftAndMainExtension
-#
 Member:
   extensions:
     - MyMemberExtension

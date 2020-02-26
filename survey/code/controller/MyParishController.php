@@ -42,7 +42,7 @@ class MyParishController extends SiteController
 		if ($myParish){
 			$parishID = $myParish->ID;
 		}
-		
+			
 		if($member->canEditParish($myParish)){
 			$form->loadDataFrom($myParish);	
 			return $form;	
