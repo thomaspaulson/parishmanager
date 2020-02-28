@@ -25,7 +25,6 @@ class HousingController extends SiteController{
         $form = $controller->HouseSearchForm();
         return $form;
     }
-
     
     public function LandSearchForm(){
         $controller = new LandController();
