@@ -10,23 +10,23 @@
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
 
-                    <div class="row">
-						<div class="large-10 columns">
-							<div class="row">
+                    <div class="grid-x grid-padding-x">
+						<div class="large-10 cell">
+							<div class="grid-x grid-padding-x">
                             <% with $FieldMap %>
                                 <% with $Name %>
-                                    <div class="large-4 columns">
+                                    <div class="large-4 cell">
                                         <label for="$ID">$Title</label> $Field
                                     </div>
                                 <% end_with %>
 							
                                 <% with $BlockNo %>
-                                    <div class="large-4 columns">
+                                    <div class="large-4 cell">
                                         <label for="$ID">$Title</label> $Field
                                     </div>
                                 <% end_with %>
                                 <% with $UnitNo %>
-                                    <div class="large-4 columns">
+                                    <div class="large-4 cell">
                                         <label for="$ID">$Title</label> $Field
                                     </div>
                                 <% end_with %>
@@ -37,13 +37,16 @@
 
 
                     <% if $Actions %>
-                        <div class="Actions">
+                        
                             <% loop $Actions %>
-                                <div class="large-2 columns">
-                                $addExtraClass('button')
+                                <div class="large-2 cell">
+                                    <div class="Actions">
+                                        <label>&nbsp;</label>
+                                        $addExtraClass('button')
+                                    </div>
                                 </div>
                             <% end_loop %>
-                        </div>
+                        
                     <% end_if %>
                     </div>
                     </fieldset>

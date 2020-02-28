@@ -10,16 +10,16 @@
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
 
-                    <div class="row">
+                    
                             <% with $FieldMap %>
-								<div class="row">
-									<div class="large-4 columns"> 
+								<div class="grid-x grid-padding-x">
+									<div class="large-4 cell"> 
                                     <% with $HasLoan %>
                                     	<label>Has Loan</label>
                                         $Field
                                     <% end_with %>
 									</div>
-									<div class="large-4 columns">
+									<div class="large-4 cell">
 									<label>From</label>
 									<% with $FromBank %>
 										$Field<label for="$ID">$Title</label>
@@ -31,7 +31,7 @@
 										$Field<label for="$ID">$Title</label>
 									<% end_with %>
 									</div>
-									<div class="large-4 columns"> 																																		
+									<div class="large-4 cell"> 																																		
 									<% with $Reason %>
 										<label for="$ID">$Title</label> $Field		
 									<% end_with %>
@@ -48,8 +48,8 @@
 					<% end_if %>
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>
                                 
 									$addExtraClass('button')
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

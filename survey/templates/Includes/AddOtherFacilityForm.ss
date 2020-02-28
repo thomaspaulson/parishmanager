@@ -11,8 +11,8 @@
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
                     
 					<% with $FieldMap %>
-						<div class="row">
-							<div class="large-12 columns">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
 							<label>Check them to select</label>
 							<% with $WaterWell %>
 								$Field<label for="$ID">$Title</label>
@@ -54,19 +54,17 @@
 						$Fields.fieldByName('ID')						
 					<% end_if %>
 					
-					<div class="row">
+					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
-                            <% loop $Actions %>
-                                
-									$addExtraClass('button')
-                                
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
+                            <% loop $Actions %>                                
+									$addExtraClass('button')                                
                             <% end_loop %>
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

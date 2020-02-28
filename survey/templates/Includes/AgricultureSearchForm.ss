@@ -8,8 +8,8 @@
             
                 <% with $FieldMap %>
                 
-						<div class="row">
-							<div class="large-12 columns">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
 							<label>Check them to select</label>
 							
 							<% with $Cocunut %>
@@ -59,15 +59,15 @@
 
 
                 <% if $Actions %>
-                <div class="row">
-                    <div class="Actions">
-                        <% loop $Actions %>
-                            <div class="large-4 columns last">
+                	<div class="grid-x grid-padding-x">                    
+                        <% loop $Actions %>							
+                            <div class="large-4 cell last">
+								<div class="Actions">
                                 $addExtraClass('button')
+								</div>
                             </div>
-                        <% end_loop %>
-                    </div>
-                </div>    
+                        <% end_loop %>                    
+                	</div>    
                 <% end_if %>
      
 

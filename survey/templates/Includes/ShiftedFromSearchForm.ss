@@ -5,10 +5,10 @@
         <fieldset>
             <% if $Legend %><legend>$Legend</legend><% end_if %>
 
-            <div class="row">
+            <div class="grid-x grid-padding-x">
                 <% with $FieldMap %>
                     <% with $Status %>
-                        <div class="large-10 columns">
+                        <div class="large-10 cell">
                             <label>Shifted from urban/rural area</label>
                             $Field
                         </div>
@@ -16,14 +16,15 @@
 
                 <% end_with %>
 
-                <% if $Actions %>
-                    <div class="Actions">
+                <% if $Actions %>                    
                         <% loop $Actions %>
-                            <div class="large-2 columns">
+                            <div class="large-2 cell">
+                                <div class="Actions">                                
                                 $addExtraClass('button')
+                                </div>
                             </div>
                         <% end_loop %>
-                    </div>
+                    
                 <% end_if %>
 
             </div>

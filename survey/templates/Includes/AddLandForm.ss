@@ -9,28 +9,27 @@
 
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
-
-                    <div class="row">
-                            <% with $FieldMap %>
-								<div class="row">
-									<div class="large-4 columns"> 
-                                    <% with $HoldsLand %>
-                                    	<label>Holds Land</label>
-                                        $Field
-                                    <% end_with %>
-									</div>
-									<div class="large-4 columns">									                                                               
-                                    <% with $Area %>
-                                        <label for="$ID">$Title</label>$Field
-                                    <% end_with %>									
-									</div>
-									<div class="large-4 columns"> 																																		
-									<% with $InCent %>
-										<label for="$ID">$Title</label> $Field		
-									<% end_with %>
-									</div>									
+                    
+                        <% with $FieldMap %>
+                            <div class="grid-x grid-padding-x">
+                                <div class="large-4 cell"> 
+                                <% with $HoldsLand %>
+                                    <label>Holds Land</label>
+                                    $Field
+                                <% end_with %>
                                 </div>
-                            <% end_with %>		<%-- with $FieldMap --%>						
+                                <div class="large-4 cell">									                                                               
+                                <% with $Area %>
+                                    <label for="$ID">$Title</label>$Field
+                                <% end_with %>									
+                                </div>
+                                <div class="large-4 cell"> 																																		
+                                <% with $InCent %>
+                                    <label for="$ID">$Title</label> $Field		
+                                <% end_with %>
+                                </div>									
+                            </div>
+                        <% end_with %>		<%-- with $FieldMap --%>						
 						
 					$Fields.fieldByName('RedirectURL')
 					$Fields.fieldByName('SecurityID')
@@ -41,8 +40,8 @@
 					<% end_if %>
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>
                                 
 									$addExtraClass('button')
@@ -51,7 +50,7 @@
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

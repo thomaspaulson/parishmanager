@@ -9,128 +9,110 @@
 
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-										$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-									$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-                    <div class="row">                            
-								<div class="row">
-									<div class="large-4 columns">
-										$Fields.fieldByName('Code[]')
-									</div>
-									<div class="large-4 columns">
-										$Fields.fieldByName('Subject[]')									
-									</div>
-									<div class="large-4 columns">																	
-										$Fields.fieldByName('Status[]')																		
-									</div>									
-                                </div>
-					</div>			
-
-					
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell">
+							$Fields.fieldByName('Code[]')
+							</div>
+							<div class="large-4 cell">
+								$Fields.fieldByName('Subject[]')									
+							</div>
+							<div class="large-4 cell">																	
+								$Fields.fieldByName('Status[]')																		
+							</div>									
+						</div>
 					$Fields.fieldByName('RedirectURL')
 					$Fields.fieldByName('SecurityID')
 					$Fields.fieldByName('FamilyMemberID')					
 						
-					<div class="row">
+					
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>                                
 									$addExtraClass('button')                                
                             <% end_loop %>
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

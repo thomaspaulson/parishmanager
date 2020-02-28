@@ -10,25 +10,25 @@
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
 
-                    <div class="row">
+                    
                             <% with $FieldMap %>
-								<div class="row">
-									<div class="large-3 columns"> 
+								<div class="grid-x grid-padding-x">
+									<div class="large-3 cell"> 
                                     <% with $Title %>
                                         <label for="$ID">$Title</label>$Field
                                     <% end_with %>									
 									</div>
-									<div class="large-3 columns">									                                                               
+									<div class="large-3 cell">									                                                               
                                     <% with $Category %>
                                         <label for="$ID">$Title</label>$Field
                                     <% end_with %>									
 									</div>
-									<div class="large-3 columns"> 																																		
+									<div class="large-3 cell"> 																																		
 									<% with $FromWhere %>
 										<label for="$ID">$Title</label> $Field		
 									<% end_with %>
 									</div>									
-									<div class="large-3 columns"> 																																		
+									<div class="large-3 cell"> 																																		
 									<% with $Year %>
 										<label for="$ID">$Title</label> $Field		
 									<% end_with %>
@@ -45,15 +45,15 @@
 					<% end_if %>
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>                                
 									$addExtraClass('button')                                
                             <% end_loop %>
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

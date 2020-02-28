@@ -10,17 +10,17 @@
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
                                                 
-					<div class="row">
-						<div class="large-12 columns"> 
-							<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+					<div class="grid-x grid-padding-x">
+						<div class="large-12 cell"> 
+							<div  class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-4">
 						<% loop ListGroups %>							
-								<li><input type="checkbox" name="CommunityGroups[]" value="$ID" <% if $Top.InGroup($ID) %>checked="checked"<% end_if %> /> $Title </li>
+								<div class="cell"><input type="checkbox" name="CommunityGroups[]" value="$ID" <% if $Top.InGroup($ID) %>checked="checked"<% end_if %> /> $Title </div>
 						<% end_loop %>							
-							</ul>
+							</div>
 						</div>
 					</div>
 					
-					<div class="row">	
+					<div class="grid-x grid-padding-x">	
 					$Fields.fieldByName('RedirectURL')
 					$Fields.fieldByName('SecurityID')
 					$Fields.fieldByName('FamilyMemberID')					
@@ -31,7 +31,7 @@
 					
                     <% if $Actions %>
                         <div class="Actions">
-                        	<div class="large-12 columns">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>                                
 									$addExtraClass('button')                                
                             <% end_loop %>

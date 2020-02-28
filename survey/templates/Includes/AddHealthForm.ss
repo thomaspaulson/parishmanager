@@ -12,8 +12,8 @@
 
                     
                     <% with $FieldMap %>
-						<div class="row">
-							<div class="large-12 columns">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
 							<label>Check them to select</label>
 							
 							<% with $Blind %>
@@ -59,8 +59,8 @@
 							</div>																	
 						</div>
 					
-						<div class="row">
-							<div class="large-4 columns last">
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell last">
 							<% with $OtherDisease %>
 								$Field<label for="$ID">$Title</label>
 							<% end_with %>
@@ -77,23 +77,21 @@
 					$Fields.fieldByName('SecurityID')
 					$Fields.fieldByName('FamilyMemberID')					
 					
-					<div class="row">
+					
 					<% if $Fields.fieldByName('ID')	%>
 						$Fields.fieldByName('ID')						
 					<% end_if %>
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
-                            <% loop $Actions %>
-                                
-									$addExtraClass('button')
-                                
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
+                            <% loop $Actions %>                                
+									$addExtraClass('button')                                
                             <% end_loop %>
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

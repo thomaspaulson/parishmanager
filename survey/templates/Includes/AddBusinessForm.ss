@@ -12,8 +12,8 @@
 
                     
                     <% with $FieldMap %>
-						<div class="row">
-							<div class="large-12 columns">
+						<div class="grid-x grid-padding-x">
+							<div class="large-12 cell">
 							<label>Check them to select</label>
 							<% with $Streetvendor %>
 								$Field<label for="$ID">$Title</label>
@@ -42,13 +42,13 @@
 							</div>																	
 						</div>
 					
-						<div class="row">
-							<div class="large-4 columns"> 																																		
+						<div class="grid-x grid-padding-x">
+							<div class="large-4 cell"> 																																		
 							<% with $Specify %>
 								<label for="$ID">$Title</label> $Field		
 							<% end_with %>
 							</div>									
-							<div class="large-4 columns"> 																																		
+							<div class="large-4 cell"> 																																		
 							</div>																		
 						</div>                                                
 
@@ -58,14 +58,14 @@
 					$Fields.fieldByName('SecurityID')
 					$Fields.fieldByName('FamilyID')					
 					
-					<div class="row">
+					
 					<% if $Fields.fieldByName('ID')	%>
 						$Fields.fieldByName('ID')						
 					<% end_if %>
 					
                     <% if $Actions %>
-                        <div class="Actions">
-                        	<div class="large-12 columns">
+                        <div class="grid-x grid-padding-x Actions">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>
                                 
 									$addExtraClass('button')
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     <% end_if %>
-                    </div>
+                    
                     </fieldset>
                 <% if $IncludeFormTag %>
                 </form>

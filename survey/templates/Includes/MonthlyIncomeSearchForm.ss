@@ -10,22 +10,23 @@
                 <fieldset>
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
 
-                    <div class="row">
+                    <div class="grid-x grid-padding-x">
                         <% loop $Fields %>
-                        <div class="large-5 columns">
+                        <div class="large-5 cell">
                             $FieldHolder
                         </div>
                         <% end_loop %>
 
 
-                    <% if $Actions %>
-                        <div class="Actions">
+                    <% if $Actions %>                        
                             <% loop $Actions %>
-                                <div class="large-2 columns">
-                                $addExtraClass('button')
+                                <div class="large-2 cell">
+                                    <div class="Actions">
+                                    <label>&nbsp;</label>
+                                    $addExtraClass('button')
+                                    </div>
                                 </div>
-                            <% end_loop %>
-                        </div>
+                            <% end_loop %>                        
                     <% end_if %>
                     </div>
                     </fieldset>
