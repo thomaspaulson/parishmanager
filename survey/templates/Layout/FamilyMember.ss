@@ -1,61 +1,36 @@
-<div class="main">
-    <div class="row">
-        <div class="large-9 medium-9 columns" id="content">            
-                <ul class="tabs" data-tab>
-                    <li class="tab-title active"><a href="#members">Members</a></li>
-                    <li class="tab-title"><a href="#education">Education</a></li>
-                    <li class="tab-title"><a href="#job">Job</a></li>
-                    <li class="tab-title"><a href="#health">Health</a></li>
-                    <li class="tab-title"><a href="#groups">Groups</a></li>
-                    
-                </ul>
-                <div class="tabs-content">
-                    <div class="content active" id="members">
-                        <div class="row">
-                            <div class="large-12 columns">                                					
-								$FamilyMemberSearchForm								
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content" id="education">
-                        <div class="row">
-                            <div class="large-12 columns end">
-								$EducationSearchForm
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content" id="job">
-                        <div class="row">
-                            <div class="large-12 columns end">
-								$JobSearchForm								
-                            </div>
-                        </div>
-						
-                    </div>
-                    <div class="content" id="health">
-						<div class="row">
-							<div class="large-12 columns">
-								$HealthSearchForm
-							</div>
-						</div>
-                    </div>
-                    <div class="content" id="groups">
-						<div class="row">
-							<div class="large-12 columns">
-								$GroupsSearchForm
-							</div>
-						</div>						
-                    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-9 medium-9 cell  small-order-1 medium-order-2"> 
 
+            <ul class="tabs" data-tabs id="member-tabs">
+                <li class="tabs-title is-active"><a href="#members" aria-selected="true">Members</a></li>
+                <li class="tabs-title"><a data-tabs-target="education" href="#education">Education</a></li>
+                <li class="tabs-title"><a data-tabs-target="job" href="#job">Job</a></li>
+                <li class="tabs-title"><a data-tabs-target="health" href="#health">Health</a></li>
+                <li class="tabs-title"><a data-tabs-target="groups" href="#groups">Groups</a></li>
+
+            </ul>   
+            <div class="tabs-content" data-tabs-content="member-tabs">
+                <div class="tabs-panel is-active" id="members">
+                    $FamilyMemberSearchForm	
+                </div>
+                <div class="tabs-panel" id="education">
+                    $EducationSearchForm
+                </div>
+                <div class="tabs-panel" id="job">
+                    $JobSearchForm
+                </div>
+                <div class="tabs-panel" id="health">
+                    $HealthSearchForm
                 </div>
 
+                <div class="tabs-panel" id="groups">
+                    $GroupsSearchForm                
+                </div>
+
+            </div>        
+
         </div><!-- div id="content" -->
-        <div class="large-3 medium-3 columns" id="sidebar">
-
+        <div class="large-3 medium-3 cell small-order-2 medium-order-1">
             <% include FamilyMemberSideBar %>
-
         </div>
-
     </div>
-</div>
-

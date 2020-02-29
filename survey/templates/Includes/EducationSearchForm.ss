@@ -11,34 +11,34 @@
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
                     
 						<% with $FieldMap %>
-						<div class="row">
+						<div class="grid-x grid-padding-x">
 							<% with $AgeForm %>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
 							<% with $AgeUpto %>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
 							<% with $Gender %>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
 						</div>						
-						<div class="row">
+						<div class="grid-x grid-padding-x">
 							<% with $Code %>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
 							<% with $Status %>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
-								<div class="large-4 columns">
+								<div class="large-4 cell">
 								</div>	
 							<% end_with %>
 						</div>
@@ -47,14 +47,14 @@
 						<% end_with %>              
 
                     <% if $Actions %>
-						<div class="row">
-                        <div class="Actions">
+						<div class="grid-x grid-padding-x">
+                        	<div class="large-12 cell">
                             <% loop $Actions %>
-                                <div class="large-12 columns">
+                                <div class="Actions">
                                 $addExtraClass('button')
                                 </div>
                             <% end_loop %>
-                        </div>
+                        	</div>
 						</div>		
                     <% end_if %>
                     

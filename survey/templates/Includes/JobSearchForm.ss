@@ -11,14 +11,14 @@
                     <% if $Legend %><legend>$Legend</legend><% end_if %>
                     
 						<% with $FieldMap %>
-						<div class="row">
+						<div class="grid-x grid-padding-x">
 							<% with $Type %>
-								<div class="large-6 columns">
+								<div class="large-6 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
 							<% with $Location %>
-								<div class="large-6 columns">
+								<div class="large-6 cell">
 								<label for="$ID">$Title</label>$Field
 								</div>
 							<% end_with %>
@@ -27,14 +27,14 @@
 						<% end_with %>              
 
                     <% if $Actions %>
-						<div class="row">
-                        <div class="Actions">
+						<div class="grid-x grid-padding-x">
+                            <div class="large-12 cell">
                             <% loop $Actions %>
-                                <div class="large-12 columns">
+                                <div class="Actions">
                                 $addExtraClass('button')
                                 </div>
                             <% end_loop %>
-                        </div>
+                            </div>
 						</div>		
                     <% end_if %>
                     
