@@ -12,6 +12,7 @@ _ss_environment.php
 /siteconfig/
 /reports/
 /themes/default/node_modules/
+/themes/simple
 /sql/
 /misc/
 mysite/_config/parish.yml
