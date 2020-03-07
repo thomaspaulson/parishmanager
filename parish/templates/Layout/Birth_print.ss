@@ -18,7 +18,7 @@
                                     <span class="input-group-label">legitimately</span><br>							
                                 </div>
                                 <div class="input-group">
-                                    <span class="input-group-label">married, of the Parish of </span> $Parish
+                                    <span class="input-group-label">married, of the Parish of </span> $OfParish
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-label">born  at</span> $Location

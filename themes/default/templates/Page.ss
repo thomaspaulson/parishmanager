@@ -18,15 +18,17 @@
 			<div class="grid-container">
 				<div class="grid-x grid-padding-x">
 					<div class="large-12 cell">
-					<h1>My Parish</h1>
+					<h2><a href="/">My Parish</a></h2>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="grid-container">
-        	$Layout    
-		</div>
+        <div class="main">
+          <div class="grid-container">        	
+          $Layout
+          </div> <!-- div class="grid-container" -->            
+        </div> <!-- div class="main" -->	      
 
 		<div class="footer">	
 			<div class="grid-container">

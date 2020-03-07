@@ -29,6 +29,11 @@ class BirthController extends SiteController {
 		$redirectURL = $form->Fields()->fieldByName('RedirectURL');
 		$redirectURL->setValue($backURL);
         
+		$myparish = $this->MyParish();
+		$parishID = $form->Fields()->fieldByName('ParishID');
+		$parishID->setValue($myparish->ID);
+		
+
 //		if($form->Fields()->fieldByName('Date')){
 //			$dateField = $form->Fields()->fieldByName('Date');
 //			$dateField->setValue(date('d-m-Y'));
@@ -54,6 +59,11 @@ class BirthController extends SiteController {
             return $this->httpError('404','Page not found');	
         }
         $this->title = 'Edit  / <small>'. $birthCertificate->Name.'</small>';
+
+		$parishID = $birthCertificate->ParishID;
+		if(!$this->canAccess($parishID)){
+			return $this->renderWith(array('Unathorised_access', 'App'));
+		}
 
         $form = $this->EditBirthForm();
         $form->setTemplate('AddBirthForm');
@@ -99,7 +109,9 @@ class BirthController extends SiteController {
 		    return $this->httpError('404','Page not found');	
 		}
 		$this->title = $birthCertificate->Name.' / <small> Birth certificate</small>';
-    	$data = array('BirthCertificate' => $birthCertificate);
+        $data = array('BirthCertificate' => $birthCertificate);
+        //Debug::show($birthCertificate);
+
     	if($this->request->isAjax()){
     		return $this->customise($data )
     		->renderWith(array('Birth_view'));

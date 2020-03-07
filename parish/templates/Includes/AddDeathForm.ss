@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-label text-right">Parish of</span>
-                                    <% with Parish %>
+                                    <% with OfParish %>
                                         $addExtraClass('input-group-field')
                                     <% end_with %>                                    
                                 </div>
@@ -176,8 +176,9 @@
                     <% end_with %>		<%-- with $FieldMap --%>						
 
                     $Fields.fieldByName('RedirectURL')
+                    $Fields.fieldByName('ParishID')					
                     $Fields.fieldByName('SecurityID')
-                    $Fields.fieldByName('FamilyID')					
+                    
 
                     <% if $Fields.fieldByName('ID')	%>
                             $Fields.fieldByName('ID')						

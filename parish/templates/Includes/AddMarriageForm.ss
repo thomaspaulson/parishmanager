@@ -115,7 +115,7 @@
                                 </div>                                
                                 <div class="input-group">
                                     <span class="input-group-label"> impediments, were married at this </span>                                    
-                                    <% with Parish %>
+                                    <% with AtParish %>
                                         $addExtraClass('input-group-field')
                                     <% end_with %>
                                     <span class="input-group-label">on </span>
@@ -199,8 +199,10 @@
 					
                     <% end_with %>		<%-- with $FieldMap --%>						
 
+                    $Fields.fieldByName('ParishID')
                     $Fields.fieldByName('RedirectURL')
                     $Fields.fieldByName('SecurityID')
+
 
 
                     <% if $Fields.fieldByName('ID')	%>

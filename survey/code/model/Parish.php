@@ -7,6 +7,7 @@ class Parish extends DataObject implements PermissionProvider{
      */
     private static $my_parish;
 	
+	
 	private static $db = array(
 		'Title' => 'varchar(255)',
 		'Location' => 'varchar(100)',

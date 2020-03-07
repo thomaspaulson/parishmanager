@@ -1,5 +1,5 @@
 <h3>Survey</h3>
-<ul class="side-nav">
+<ul class="vertical menu">
     <li><a href="members">Members</a></li>
     <li><a href="education">Education</a></li>
     <li><a href="job">Job</a></li>

@@ -68,9 +68,9 @@
 .header{
 	background-color: $light-gray;
 	//color: $white;
-	.top-bar{
-		border: 1px solid #000;
-	}
+	// .top-bar{
+	// 	border: 1px solid #000;
+	// }
 }
 .main{	
 	min-height: rem-calc(360);
@@ -78,5 +78,8 @@
 	.sidebar{
 		margin-top: 20px;
 		float: left;
+	}
+	#MemberLoginForm_LostPasswordForm, #MemberLoginForm_LoginForm, #ChangePasswordForm_ChangePasswordForm{
+		max-width: rem-calc(600);
 	}
 }

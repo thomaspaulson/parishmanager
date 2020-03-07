@@ -68,7 +68,7 @@
                                 </div>                                
                                 <div class="input-group">
                                     <span class="input-group-label"> impediments, were married at this </span>                                    
-                                    $Parish    
+                                    $AtParish    
                                     <span class="input-group-label">on </span>
                                     $DOMarriage.Format('d-m-Y')
                                 </div>                                

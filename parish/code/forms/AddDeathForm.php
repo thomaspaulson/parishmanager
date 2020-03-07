@@ -31,11 +31,11 @@ class AddDeathForm extends BaseForm{
         $fields->push(TextField::create('Name','Name')->setAttribute('placeholder', 'Name')); 		
         $fields->push(TextField::create('FathersName','Fathers name')->setAttribute('placeholder', 'Father\'s Name')); 		        
         $fields->push(TextField::create('MothersName','Mothers name')->setAttribute('placeholder', 'Mother\'s Name'));
-	$fields->push(TextField::create('SpouseName','Mothers name')->setAttribute('placeholder', 'Spouse\'s Name'));		
+	    $fields->push(TextField::create('SpouseName','Mothers name')->setAttribute('placeholder', 'Spouse\'s Name'));		
         $fields->push(DropdownField::create('Solemnity','Solemnity',array('with' => 'with','without' => 'without')));
         $fields->push(DropdownField::create('Ecclesiatical','Ecclesiatical',array('with' => 'with','without' => 'without')));
-        $fields->push(TextField::create('Parish','Parish name'));
-	$fields->push(TextField::create('Priest','By'));
+        $fields->push(TextField::create('OfParish','Parish name'));
+    	$fields->push(TextField::create('Priest','By'));
         $fields->push(TextField::create('Cemetery','Cemetery'));
         $fields->push(TextField::create('DateBuried','Date')->setAttribute('placeholder', 'dd'));        
         $monthBuriedField = DropdownField::create('MonthBuried','Month', MyHelper::Months())
@@ -49,6 +49,7 @@ class AddDeathForm extends BaseForm{
         $fields->push(TextField::create('Date','Date')->setAttribute('placeholder', 'dd-mm-yyyy'));
         $fields->push(TextField::create('ParishPriest','Priest Name'));
 
+        $fields->push(HiddenField::create('ParishID','ParishID'));
         $fields->push(HiddenField::create('RedirectURL','RedirectURL'));		
 
         return $fields;

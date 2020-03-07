@@ -30,6 +30,10 @@ class DeathController extends SiteController {
 		$redirectURL = $form->Fields()->fieldByName('RedirectURL');
 		$redirectURL->setValue($backURL);
         
+		$myparish = $this->MyParish();
+		$parishID = $form->Fields()->fieldByName('ParishID');
+		$parishID->setValue($myparish->ID);
+
 //      set current date  
 //		if($form->Fields()->fieldByName('Date')){
 //			$dateField = $form->Fields()->fieldByName('Date');
@@ -55,6 +59,11 @@ class DeathController extends SiteController {
             return $this->httpError('404','Page not found');	
         }
         $this->title = 'Edit  / <small>'. $deathCertificate->Name.'</small>';
+
+		$parishID = $deathCertificate->ParishID;
+		if(!$this->canAccess($parishID)){
+			return $this->renderWith(array('Unathorised_access', 'App'));
+		}
 
         $form = $this->EditDeathForm();
         $form->setTemplate('AddDeathForm');
@@ -174,7 +183,7 @@ class DeathController extends SiteController {
         $sqlQuery->setFrom('DeathCertificate');		
 
 
-	$name = Convert::raw2sql($this->request->getVar('Name'));
+	    $name = Convert::raw2sql($this->request->getVar('Name'));
         $blockNo = Convert::raw2sql($this->request->getVar('DOB'));
 		
         if($name) {		
@@ -189,6 +198,10 @@ class DeathController extends SiteController {
         $sqlQuery->addWhere("DeathCertificate.Deleted != '1'");
 
         $sqlQuery->setOrderBy('DeathCertificate.ID DESC');
+
+		$myparish = $this->MyParish();
+		$sqlQuery->addWhere("DeathCertificate.ParishID = $myparish->ID");		
+
         $result = $sqlQuery->execute();
         //echo $sqlQuery->sql();
         // Iterate over results
@@ -224,9 +237,10 @@ class DeathController extends SiteController {
         return $list;
     }    
     
-    public function Month($monthIndex = null){
-        $months = MyHelper::Months();
-        $month = $months[$monthIndex];
+    public function Month($key = null){        
+        $months = MyHelper::Months();        
+        //$month = $months[$key]; // php 5.6 < 7
+        $month = $months[$key] ?? null;  // php  7 >
         if($month){
             return $month;
         }        

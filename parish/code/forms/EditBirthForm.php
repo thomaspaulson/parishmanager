@@ -23,10 +23,10 @@ class EditBirthForm extends BaseForm{
         $fields->push(DropdownField::create('Gender', 'Gender', array('m'=>'son','f'=>'daugther'))->setEmptyString('select'));
         $fields->push(TextField::create('FathersName','Fathers name')->setAttribute('placeholder', 'Father\'s Name')); 		        
         $fields->push(TextField::create('MothersName','Mothers name')->setAttribute('placeholder', 'Mother\'s Name'));
-        $fields->push(TextField::create('Parish','Parish name'));
+        $fields->push(TextField::create('OfParish','Parish name'));
         $fields->push(TextField::create('Location','At'));
         $fields->push(TextField::create('DOB','Date of birth')->setAttribute('placeholder', 'dd-mm-yyyy'));
-	$fields->push(TextField::create('BaptisedAt','Parish name'));
+	    $fields->push(TextField::create('BaptisedAt','Parish name'));
         $fields->push(TextField::create('BaptisedDate','On (date)')->setAttribute('placeholder', 'dd-mm-yyyy'));        
         $fields->push(TextField::create('Priest','By'));
         $fields->push(TextField::create('GodFather','God Father')->setAttribute('placeholder', 'God Father'));
@@ -35,13 +35,14 @@ class EditBirthForm extends BaseForm{
         $fields->push(TextField::create('GodMother','God Mother')->setAttribute('placeholder', 'God Mother'));        
         $fields->push(TextField::create('GodMotherParish','God Mother Parish')); 
         $fields->push(CheckboxField::create('PrivatelyBaptised','(privately)'));
-	$fields->push(HiddenField::create('ID','ID'));		
+	    $fields->push(HiddenField::create('ID','ID'));		
         
 		
         $fields->push(TextField::create('Place','Place'));
         $fields->push(TextField::create('Date','Date')->setAttribute('placeholder', 'dd-mm-yyyy'));
         $fields->push(TextField::create('ParishPriest','Priest Name'));							
 
+        $fields->push(HiddenField::create('ParishID','ParishID'));
         $fields->push(HiddenField::create('RedirectURL','RedirectURL'));		
 
         return $fields;

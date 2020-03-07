@@ -9,7 +9,7 @@ class BirthCertificate extends DataObject{
         'Gender'            => 'Varchar(1)',
         'FathersName'       => 'Varchar(100)',
         'MothersName'       => 'Varchar(100)',
-        'Parish'            => 'Varchar(100)',
+        'OfParish'            => 'Varchar(100)',
         'Location'          => 'Varchar(20)',
         'DOB'               => 'Date',
         'BaptisedAt'        => 'Varchar(200)',

@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-label text-right">Parish of</span>
-                                    $Parish
+                                    $OfParish
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-label">in communion with The Holy Catholic Church (outside communion with</span>

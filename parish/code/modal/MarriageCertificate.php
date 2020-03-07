@@ -21,7 +21,7 @@ class MarriageCertificate extends DataObject{
       'BrideBornAt'     => 'Varchar(100)',                
       'BrideBaptisedAt' => 'Varchar(100)',  
       'BrideBaptised'   => 'Date',            
-      'Parish'          => 'Varchar(100)',
+      'AtParish'          => 'Varchar(100)',
       'DOMarriage'      => 'Date',
       'Witness1'        => 'Varchar(100)',
       'Witness1Parish'  => 'Varchar(100)',

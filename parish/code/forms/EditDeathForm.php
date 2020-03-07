@@ -31,12 +31,12 @@ class EditDeathForm extends BaseForm{
         $fields->push(DropdownField::create('Gender', 'Gender', array('m'=>'son','f'=>'daugther'))->setEmptyString('select'));
         $fields->push(TextField::create('FathersName','Fathers name')->setAttribute('placeholder', 'Father\'s Name')); 		        
         $fields->push(TextField::create('MothersName','Mothers name')->setAttribute('placeholder', 'Mother\'s Name'));
-	$fields->push(TextField::create('SpouseName','Mothers name')->setAttribute('placeholder', 'Spouse\'s Name'));		
+	    $fields->push(TextField::create('SpouseName','Mothers name')->setAttribute('placeholder', 'Spouse\'s Name'));		
         $fields->push(DropdownField::create('Solemnity','Solemnity',array('with' => 'with','without' => 'without')));
         $fields->push(DropdownField::create('Ecclesiatical','Ecclesiatical',array('with' => 'with','without' => 'without')));
         
-        $fields->push(TextField::create('Parish','Parish name'));
-	$fields->push(TextField::create('Priest','By'));
+        $fields->push(TextField::create('OfParish','Parish name'));
+	    $fields->push(TextField::create('Priest','By'));
         $fields->push(TextField::create('Cemetery','Cemetery'));
         $fields->push(TextField::create('DateBuried','Date')->setAttribute('placeholder', 'dd'));
         $monthBuriedField = DropdownField::create('MonthBuried','Month', MyHelper::Months())
