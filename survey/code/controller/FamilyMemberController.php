@@ -588,12 +588,6 @@ class FamilyMemberController extends SiteController
 		return $list;
 	}
 
-	public function Sex($gender){
-		if($gender == 'm')
-			return 'Male';
-		else
-			return 'Female';
-	}
 
 	//return MartialStatus ie 'Married/Single/...'
 	public function MStatus($martialStatus){
@@ -630,25 +624,6 @@ class FamilyMemberController extends SiteController
 
 	}
 
-	public function Age($dob, $age){
-		if($dob){
-			$from = new DateTime($dob);
-			$to   = new DateTime('today');
-			return  $from->diff($to)->y.'';
-		}
-		else{
-			return $age;
-		}
-	}
-	
-	public function DOB($date, $format){
-		if($date){
-			$date = new DateTime($date);
-			return $date->format( $format);
-		}
-		return 'NA';
-		//return date($format , $date );	
-	}
 		
 	public function FamilyMemberLiteSearchForm(){
 		$form = new FamilyMemberLiteSearchForm($this,__FUNCTION__);

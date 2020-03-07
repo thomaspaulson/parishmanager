@@ -27,11 +27,16 @@ class MarriageController extends SiteController {
         $backURL = urldecode($this->getRequest()->getVar('BackURL'));
         $redirectURL = $form->Fields()->fieldByName('RedirectURL');
         $redirectURL->setValue($backURL);
+
+		$myparish = $this->MyParish();
+		$parishID = $form->Fields()->fieldByName('ParishID');
+		$parishID->setValue($myparish->ID);
+
         
-//	if($form->Fields()->fieldByName('Date')){
-//          $dateField = $form->Fields()->fieldByName('Date');
-//          $dateField->setValue(date('d-m-Y'));
-//      }        
+        //	if($form->Fields()->fieldByName('Date')){
+        //          $dateField = $form->Fields()->fieldByName('Date');
+        //          $dateField->setValue(date('d-m-Y'));
+        //      }        
         
         $data = array('Form' => $form);
         return $this->customise($data)->renderWith(array('Generic_form', 'App'));
@@ -143,9 +148,9 @@ class MarriageController extends SiteController {
         }		
 
         $marriageCertificate->Deleted = 1;
-	$marriageCertificate->write();
+    	$marriageCertificate->write();
 
-	$backURL = urldecode($this->getRequest()->getVar('BackURL'));//exit($backURL );
+	    $backURL = urldecode($this->getRequest()->getVar('BackURL'));//exit($backURL );
         if($backURL){
             return $this->redirect($backURL.'&message=deleted');
         }
@@ -203,8 +208,13 @@ class MarriageController extends SiteController {
             $sqlQuery->addWhere("MarriageCertificate.DateOfMarriage = '$date'");
         }
         
-	$sqlQuery->addWhere("MarriageCertificate.Deleted != '1'");
+        $sqlQuery->addWhere("MarriageCertificate.Deleted != '1'");
+        
+		$myparish = $this->MyParish();
+		$sqlQuery->addWhere("MarriageCertificate.ParishID = $myparish->ID");		
+
         $sqlQuery->setOrderBy('MarriageCertificate.ID DESC');
+        
         $result = $sqlQuery->execute();
         //echo $sqlQuery->sql();
         $arrList = new ArrayList();

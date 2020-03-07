@@ -385,31 +385,6 @@ class EducationController extends SiteController
         return $form;
     }
 
-
-	protected function FormatDate($value, $format){
-		if($value){
-			$date = new DateTime($value);
-			return $date->format($format);
-		}
-	}
-	
-	public function Sex($gender){
-		if($gender == 'm')
-			return 'Male';
-		else
-			return 'Female';
-	}	
-	
-	protected function Age($dob, $age){		
-		if($dob){
-			$from = new DateTime($dob);
-			$to   = new DateTime('today');
-			return  $from->diff($to)->y;
-		}
-		else{
-			return  $age;
-		}
-	}
 	
     public function Course($code){
         $codes = Config::inst()->get('Education', 'Course');
@@ -417,7 +392,4 @@ class EducationController extends SiteController
     }
 	
 
-	protected function Dummy(){
-		return 'dummy';
-	}	
 }

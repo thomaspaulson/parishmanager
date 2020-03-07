@@ -3,7 +3,7 @@
 				<table>
 					<thead>
 						<tr>
-						<th>#</th><th>Name</th><th>DOB</th><th>Father</th><th width="15%"></th>		
+						<th>#</th><th>Name</th><th>DOB</th><th>Father</th><th width="20%"></th>		
 					</tr>
 					</thead>
 					<tbody>

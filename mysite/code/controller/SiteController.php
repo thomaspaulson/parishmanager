@@ -44,38 +44,6 @@ class SiteController extends Controller
 			))
 			->first();
 		return $parish;
-		/*
-        if(Cookie::get('myparishid')){
-            $id = Cookie::get('myparishid');
-            $parish = Parish::get()
-                ->filter(array(
-                    'ID' => $id
-                ))
-                ->first();
-            return $parish;
-        }
-
-        if(Session::get('myparishid')){
-            $id = Session::get('myparishid');
-            $parish = Parish::get()
-                        ->filter(array(
-                            'ID' => $id
-                        ))
-                        ->first();
-            return $parish;
-        }
-		
-		$member = $this->getMember();
-		$parishes = $member->Parishes();
-		//Debug::show($parishes);
-		if($parishes->exists()){
-			$parish = $parishes->first();
-			Session::set('myparishid',$parish->ID);
-			return $parish;
-		}
-		
-        return $parish;
-        */ 
     }
 
     public function MyParishes($limit = 10){
@@ -186,5 +154,50 @@ class SiteController extends Controller
 
         return parent::httpError($code, $message);
     }
+
+	public function DOB($date, $format){
+		if($date){
+			$date = new DateTime($date);
+			return $date->format( $format);
+		}
+		return 'NA';
+		//return date($format , $date );	
+	}
+
+	public function Date($date = null, $format = 'd-m-Y'){
+		if($date){
+			$date = new DateTime($date);
+			return $date->format( $format);
+		}
+		return 'NA';
+		//return date($format , $date );	
+    }
+    
+    public function FormatDate($value, $format){
+		if($value){
+			$date = new DateTime($value);
+			return $date->format($format);
+		}
+	}
 	
+
+
+	public function Age($dob, $age = null){
+		if($dob){
+			$from = new DateTime($dob);
+			$to   = new DateTime('today');
+			return  $from->diff($to)->y.'';
+		}
+		else{
+			return $age;
+		}
+	}
+    
+	public function Sex($gender){
+		if($gender == 'm')
+			return 'Male';
+		else
+			return 'Female';
+	}	
+
 }

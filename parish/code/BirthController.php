@@ -182,8 +182,12 @@ class BirthController extends SiteController {
 		}
 		
 		$sqlQuery->addWhere("BirthCertificate.Deleted != '1'");
-		
-		$sqlQuery->setOrderBy('BirthCertificate.ID DESC');
+        
+		$myparish = $this->MyParish();
+		$sqlQuery->addWhere("BirthCertificate.ParishID = $myparish->ID");		
+        
+        $sqlQuery->setOrderBy('BirthCertificate.ID DESC');
+        
 		$result = $sqlQuery->execute();
 		//echo $sqlQuery->sql();
 		// Iterate over results
@@ -210,9 +214,15 @@ class BirthController extends SiteController {
     }
     
     public function RecentBrith($numRecords = 3){
+
+		$myparish = $this->MyParish();		
+
         $list = BirthCertificate::get()
             ->sort('ID DESC')
-            ->filter('Deleted', 0)
+            ->filter([
+                'ParishID' => $myparish->ID,
+                'Deleted' => 0
+            ])
             ->limit($numRecords);
         return $list;
     }    

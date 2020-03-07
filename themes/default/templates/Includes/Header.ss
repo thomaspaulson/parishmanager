@@ -2,7 +2,7 @@
         <div class="grid-container">       
             <div class="top-bar">
               <div class="top-bar-left">
-              <h5><% if $MyParish %>$MyParish.Title, $MyParish.Location <% end_if %></h5>
+              <h5><a href="/"><% if $MyParish %>$MyParish.Title, $MyParish.Location <% end_if %></a></h5>
               </div>
               <div class="top-bar-right">
 

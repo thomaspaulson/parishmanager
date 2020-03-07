@@ -5,8 +5,6 @@ class FinancialController extends SiteController{
         'index'
     );
 	
-
-
     public function init(){
         parent::init();
 		$this->title = "Financial details";

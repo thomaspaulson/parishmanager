@@ -268,32 +268,6 @@ class JobController extends SiteController
 		return $list;
 	}
 	
-	protected function FormatDate($value, $format){
-		if($value){
-			$date = new DateTime($value);
-			return $date->format($format);
-		}
-	}
-	
-	public function Sex($gender){
-		if($gender == 'm')
-			return 'Male';
-		else
-			return 'Female';
-	}	
-
-	
-	protected function Age($dob, $age){		
-		if($dob){
-			$from = new DateTime($dob);
-			$to   = new DateTime('today');
-			return  $from->diff($to)->y;
-		}
-		else{
-			return  $age;
-		}
-	}	
-	
     protected function JobType($type){
 		if($type){
 			$typeCodes = Config::inst()->get('Job', 'TypeCode');

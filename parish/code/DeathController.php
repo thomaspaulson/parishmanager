@@ -197,10 +197,11 @@ class DeathController extends SiteController {
 
         $sqlQuery->addWhere("DeathCertificate.Deleted != '1'");
 
-        $sqlQuery->setOrderBy('DeathCertificate.ID DESC');
-
 		$myparish = $this->MyParish();
 		$sqlQuery->addWhere("DeathCertificate.ParishID = $myparish->ID");		
+
+        $sqlQuery->setOrderBy('DeathCertificate.ID DESC');
+
 
         $result = $sqlQuery->execute();
         //echo $sqlQuery->sql();
@@ -230,9 +231,14 @@ class DeathController extends SiteController {
     
     
     public function RecentDeath($numRecords = 3){
+		$myparish = $this->MyParish();		
+
         $list = DeathCertificate::get()
             ->sort('ID DESC')
-            ->filter('Deleted', 0)
+            ->filter([
+                'ParishID' => $myparish->ID,
+                'Deleted' => 0
+            ])
             ->limit($numRecords);
         return $list;
     }    

@@ -390,30 +390,7 @@ class HealthController extends SiteController
 		return $list;
 	}
 	
-	protected function FormatDate($value, $format){
-		if($value){
-			$date = new DateTime($value);
-			return $date->format($format);
-		}
-	}
 	
-	protected function Sex($gender){
-		if($gender == 'm')
-			return 'Male';
-		else
-			return 'Female';
-	}
-		
-	protected function Age($dob, $age){		
-		if($dob){
-			$from = new DateTime($dob);
-			$to   = new DateTime('today');
-			return  $from->diff($to)->y;
-		}
-		else{
-			return  $age;
-		}
-	}	
     public function HealthSearchForm(){
         $form = new HealthSearchForm($this,__FUNCTION__);
         $form->setFormMethod('get')
