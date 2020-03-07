@@ -1,8 +1,0 @@
----
-Name: myparish
-After:
-  - 'framework/*'
-  - 'cms/*'
----
-Parish:
-  my_parish: 30
