@@ -1,66 +1,119 @@
                     
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell">
-          <h1>$MetaTitle</h1>          
+          <h3 class="text-center">$MetaTitle</h3>  
+          
                     
-					<% with $BirthCertificate %>
-                        <div class="grid-x grid-padding-x">
-                          <div class="large-3 cell">							
-								$Year<label for="$ID">Year</label>	
-								$RegNO<label for="$ID">Reg No</label>
-                          </div>
-                            <div class="large-9 cell">
-                              <div class="input-group">
-                              		$Name  <span class="input-group-label">son/daugther of </span>
-                                </div>
-                                <div class="input-group">
-                                    $FathersName <span class="input-group-label">and</span> $MothersName
-                                    <span class="input-group-label">legitimately</span><br>							
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">married, of the Parish of </span> $OfParish
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">born  at</span> $Location
-                                    <span class="input-group-label">on</span> $DOB.Format('d-m-Y')
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label text-right">was baptised (admitted to complete the baptismal rites on *)</span>
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">at</span> $BaptisedAt
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">on</span> $BaptisedDate.Format('d-m-Y')
-                                    <span class="input-group-label">by Rev. Fr</span> $Priest
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">Sponsors being </span> $GodFather
-                                </div>                                
-                                <div class="input-group">
-                                    <span class="input-group-label">of the Parish of </span> $GodFatherParish
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">and his Wife/Sister/Mother </span> $GodMother
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-label">of the Parish of </span> $GodMotherParish
-                                </div>
-                                
-                            </div>																	
-						</div><!-- div class="grid-x grid-padding-x" -->
-					
-						<div class="grid-x grid-padding-x">
-							<div class="large-4 cell"> 																																		
-							</div>									
-							<div class="large-4 cell"> 																																		
-							</div>																		
-						</div>          
-						
-						
+            <% with $BirthCertificate %>
+                <div class="grid-x grid-padding-x">
+                    <div class="large-3 cell">							
+                            <p class="text-left">Reg No $RegNO / $Year</p>
+                    </div>
+                    <div class="large-9 cell">
+                        <p class="text-right">Date: $Now.Format('d-m-Y')</p>
+                    </div>
+                </div>
 
-                    
-					<% end_with %>		<%-- with $BirthCertificate --%>                    
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">Name</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $Name</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">FathersName</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $FathersName</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">MothersName</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $MothersName</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">DOB, Location</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $DOB.Format('d-m-Y'), $Location</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">Baptised on, Baptised at</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $BaptisedDate.Format('d-m-Y'), $BaptisedAt</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">Baptised by</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $Priest</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">GodFather</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $GodFather</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">GodFatherParish</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $GodFatherParish</p>
+                    </div>
+                </div>
+
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">GodMother</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $GodMother</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell">  
+                        <p class="text-left">GodMotherParish</p>
+                    </div>
+                    <div class="large-8 cell">
+                        <p class="text-left">: $GodMotherParish</p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 cell"> 																																		
+                    </div>									
+                    <div class="large-4 cell"> 																																		
+                    </div>																		
+                </div>                         
+                
+            <% end_with %>		<%-- with $BirthCertificate --%>                    
+            <hr>
         </div>
       </div>
                 

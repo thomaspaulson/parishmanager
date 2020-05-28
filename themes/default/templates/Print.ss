@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <head>
 	<% base_tag %>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; My Survey</title>
+	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; Parish</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 
-	<style>
-	h3 { font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif }
-	table { border-collapse: collapse; font-family: Arial, sans-serif; color: #333; font-size: 12pt; }
-	table th { border-bottom: 2px solid #333; padding: 5px 10px; font-weight: bold; text-align: left; }
-	table th:first-child { padding-left: 0px; }
-	table td { border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; text-align: left; padding: 5px 10px; }
-	table td:first-child { padding-left: 0px; }
-    @media print {
-        .footer {page-break-after: always;}
-    }
-	</style>
+   	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <% require themedCSS('app') %>
+
 </head>
-<body onload="window.print();">
+<body>
+		<div class="header">
+			<div class="grid-container">
+				<% if $MyParish %>       				
+					<h3 class="text-center">$MyParish.Title	</h3>				 	
+					<p  class="text-center h5">$MyParish.Address</p>
+					<p  class="text-center">Contact: $MyParish.Landline</p>
+					<p  class="text-center">Diocese Of Cochin</p>
+				 <% end_if %>
+			</div>
+		</div>
 
-<h3>My Parish</h3>
-<% if $Title %><h5>$Title</h5><% end_if %> 
-		$Layout
+        <div class="main">
+          <div class="grid-container">        	
+				<% if $Title %>
+					<h5>$Title</h5>
+				<% end_if %> 
+				$Layout				
+          </div> <!-- div class="grid-container" -->            
+        </div> <!-- div class="main" -->	   
 
-<p>
-    Printed at $Now.Nice<br>
-	Printed at $Member.Name
-    <br />
-</p>
+		<div class="footer">
+			<div class="grid-container">       
+				<div class="grid-x grid-padding-x">
+					<div class="large-4 cell">							
+						<p>	$MyParish.Location  </p>
+						<p> $Now.Format('d-m-Y')  </p>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="grid-container">       
+		    <div class="grid-x grid-padding-x">
+			    <div class="large-12 cell">
+				<hr>
+				<p>	Printed at $Now.Nice by $Member.Name  </p>
+				</div>
+			</div>
+		</div>
+
+	<script src="$ThemeDir/js/app.js"></script>
+	<script>
+		//window.onload = function(){
+		//	window.print();
+		//}
+	</script
+  
 </body>
 </html>

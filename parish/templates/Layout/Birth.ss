@@ -27,6 +27,7 @@
                             <td>$FathersName</td>
                             <td>
                                     <ul class="menu small">
+                                            <li><a href="birth/doprint/$ID"  target="_blank"><i class="fi-print"></i></a></li>
                                             <li><a href="birth/view/$ID?&BackURL=$Top.RequestedURL" title="view"><i class="fi-page"></i></a></li>
                                             <li><a href="birth/edit/$ID?&BackURL=$Top.RequestedURL" title="edit"><i class="fi-page-edit"></i></a></li>
                                             <li><a href="birth/delete/$ID?&BackURL=$Top.RequestedURL"  title="delete" onclick="return confirm('Are you sure?');"><i class="fi-page-delete"></i></a></li>
