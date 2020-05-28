@@ -17,7 +17,8 @@ class Family extends DataObject
 		'FamilyNo' => 'Int',
 		'ContactNo' => 'varchar(255)',
 		'Email' => 'varchar(255)',
-		'Aadhaar' => 'varchar(255)'
+		'Aadhaar' => 'varchar(255)',
+		'Remark' => 'Text',
 	);
 
 	private static $has_one = array(

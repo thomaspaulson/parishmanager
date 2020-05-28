@@ -140,7 +140,7 @@ class FamilyController extends SiteController
 		$form = $this->EditFamilyForm();
 		$form->setTemplate('AddFamilyForm');
 		$id = (int)$this->request->param('ID');
-		//var_dump($_POST);EXIT();
+		
 		$family = Family::get()->byID($id);
 		if(!$family){
 			 return $this->httpError(404,'Page not found');

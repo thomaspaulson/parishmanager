@@ -32,6 +32,7 @@ class AddFamilyForm extends BaseForm{
 		$fields->push(TextField::create('ContactNo','Phone No'));
 		$fields->push(TextField::create('Email','Email'));		
 		$fields->push(TextField::create('Aadhaar','Aadhaar'));		
+		$fields->push(TextareaField::create('Remark','Remark'));		
 		/*
 		$member = Member::currentUser();		
 		$parishes = $member->Parishes(); 

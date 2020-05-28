@@ -1,33 +1,40 @@
-<div class="row main">
-    <div class="large-12 columns">
+<div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
 		<div class="panel">
 		<% with Family %>		
-        <h3>$Name</h3>
-				<!--<a href="family/print-family/$ID" target="_blank" title="Print"> Print <i class="fi-print"></i></a>-->
-				<a href="family/edit-family/$ID?&BackURL=$Top.RequestedURL" title="Edit $Name"><i class="fi-page-edit"></i> Edit</a>
-				|
-				<a href="$Top.GoBackURL" title="Go back"><i class="fi-page-edit"></i> Go back</a>
-	        <div class="row">			
-	            <div class="large-6 columns">
+			<h3>$Name</h3>
+			<!--<a href="family/print-family/$ID" target="_blank" title="Print"> Print <i class="fi-print"></i></a>-->
+			<a href="family/edit-family/$ID?&BackURL=$Top.RequestedURL" title="Edit $Name"><i class="fi-page-edit"></i> Edit</a>
+			|
+			<a href="$Top.GoBackURL" title="Go back"><i class="fi-page-edit"></i> Go back</a>
+	        <div class="grid-x grid-padding-x">			
+	            <div class="large-6 cell">
 					$Address, $Pincode (pin) <br>
 					House no: $HouseNo <br>
 					Panchayat: $InPanchayat <br>
 					Municipality: $InMunicipality <br>
-					Corporation: $InCorporation 
-	
+					Corporation: $InCorporation <br>
+					Remark: <br>
+					$Remark
+
 	            </div>
-	            <div class="large-6 columns">
+	            <div class="large-6 cell">
 	            	Parish: $Parish.NameWithLocation <br>
 					Block no: $BlockNo <br>
 	                Unit no: $UnitNo <br>
-					Family no: $FamilyNo				
+					Family no: $FamilyNo<br>
+					ContactNo: $ContactNo<br>
+					Email: $Email<br>
+					Aadhaar: $Aadhaar<br>
+
+
               </div>
        	</div>
         </div>
 		<hr>
 		
-        <div class="row">
-            <div class="large-12 columns">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
 				<a name="members"></a> 
 				<h4 class="subheader">Members</h4>
 						<a href="members/add-member?FamilyID=$ID&BackURL=$Top.RequestedURL(#members)" title="Add member"><i class="fi-page-add"></i> Add member</a>
@@ -75,13 +82,13 @@
 						<% else %>
 						<% end_if %>				
 						<% if $House %>						
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								House: $House.Status<br>								
 								Ration-Card Holder: $House.RationCardHolder<br>
 								HouseType: $House.Type
 							</div>			
-						    <div class="large-6 columns">								
+						    <div class="large-6 cell">								
 								Card Type: $House.CardType.UpperCase<br>
 								Build Year: $House.BuildYear
 							</div>
@@ -96,14 +103,14 @@
 							<a href="land/add-land?FamilyID=$ID&BackURL=$Top.RequestedURL(#land)"><i class="fi-page-add"></i> Add</a>
 						<% end_if %>
 						<% if $Land %>						
-				        <div class="row">
-						    <div class="large-4 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-4 cell">
 								HoldsLand: $Land.LandHolder							
 							</div>
-						    <div class="large-4 columns">
+						    <div class="large-4 cell">
 								Area: $Land.Area							
 							</div>										
-						    <div class="large-4 columns">
+						    <div class="large-4 cell">
 								Total Land: $Land.InCent cents
 							</div>
 						</div>
@@ -119,14 +126,14 @@
 						<% end_if %>		
 										
 						<% if $ShiftedFrom %>												
-				        <div class="row">
-						    <div class="large-4 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-4 cell">
 								Status : $ShiftedFrom.Shifted							
 							</div>
-						    <div class="large-4 columns">
+						    <div class="large-4 cell">
 								From Where: $ShiftedFrom.FromWhere							
 							</div>										
-						    <div class="large-4 columns">
+						    <div class="large-4 cell">
 								Reason: $ShiftedFrom.Reason
 							</div>
 						</div>
@@ -144,15 +151,15 @@
 						<% end_if %>								
 						
 						<% if $Agriculture %>
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $Agriculture.Cocunut %>Cocunut, <% end_if %> 														
 								<% if $Agriculture.Produce %>Produce, <% end_if %> 							
 								<% if $Agriculture.Paddy %>Paddy, <% end_if %> 														
 								<% if $Agriculture.Fruit %>Fruit <% end_if %> 															
 							</div>
 							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Agriculture.Others %>others : $Agriculture.Specify<% end_if %> 
 							</div>										
 						</div>
@@ -168,15 +175,15 @@
 						<% end_if %>											
 						
 						<% if $Business %>			
-						<div class="row">	
-						    <div class="large-6 columns">
+						<div class="grid-x grid-padding-x">	
+						    <div class="large-6 cell">
 								<% if $Business.Streetvendor %>Streetvendor, <% end_if %> 														
 								<% if $Business.Unduvandi %>Unduvandi, <% end_if %> 							
 								<% if $Business.Pettikada %>Pettikada, <% end_if %> 														
 								<% if $Business.Shop %>Shop <% end_if %> 															
 							</div>
 							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Business.Others %>others : $Business.Specify<% end_if %> 
 							</div>										
 						</div>	
@@ -194,8 +201,8 @@
 						<% end_if %>											
 						
 						<% if $MonthlyIncome %>
-				        <div class="row">
-						    <div class="large-6 columns last">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell last">
 								Total : $MonthlyIncome.Total							
 							</div>																	
 						</div>
@@ -211,20 +218,20 @@
 						<% end_if %>											
 
 						<% if $MonthlyExpense %>
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								Education : $MonthlyExpense.Education							
 							</div>
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								Medical : $MonthlyExpense.Medical							
 							</div>										
 							
 						</div>	
-						<div class="row">							
-						    <div class="large-6 columns">
+						<div class="grid-x grid-padding-x">							
+						    <div class="large-6 cell">
 								Others : $MonthlyExpense.Others							
 							</div>										
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								Total : $MonthlyExpense.Total							
 							</div>																	
 						</div>
@@ -243,14 +250,14 @@
 						<% end_if %>																	
 
 						<% if $Vehicle %>
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $Vehicle.Cycle %>Cycle, <% end_if %> 														
 								<% if $Vehicle.Bike %>Bike, <% end_if %> 							
 								<% if $Vehicle.Autoriskaw %>Autoriskaw, <% end_if %> 														
 								<% if $Vehicle.LightVehicle %>LightVehicle <% end_if %> 															
 							</div>							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Vehicle.Others %>others : $Vehicle.Specify<% end_if %> 
 							</div>										
 							
@@ -269,14 +276,14 @@
 						<% end_if %>																	
 						
 						<% if $Appliance %>						
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $Appliance.WashingMachine %>WashingMachine, <% end_if %> 														
 								<% if $Appliance.AirConditioner %>AirConditioner, <% end_if %> 							
 								<% if $Appliance.MicrowaveOven %>MicrowaveOven, <% end_if %> 														
 								<% if $Appliance.CookingGas %>CookingGas <% end_if %> 															
 							</div>							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Appliance.Others %>others : $Appliance.Specify<% end_if %> 
 							</div>									
 							
@@ -294,14 +301,14 @@
 						<% end_if %>																	
 						
 						<% if $OtherFacility %>						
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $OtherFacility.WaterWell %>WaterWell, <% end_if %> 														
 								<% if $OtherFacility.DrillWell %>DrillWell, <% end_if %> 							
 								<% if $OtherFacility.WaterConnection %>WaterConnection, <% end_if %> 														
 								<% if $OtherFacility.RainwaterStorage %>RainwaterStorage <% end_if %> 															
 							</div>							
-						    <div class="large-6 columns">								
+						    <div class="large-6 cell">								
 							</div>									
 							
 						</div>	    
@@ -319,14 +326,14 @@
 						<% end_if %>																	
 						
 						<% if $Media %>						
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $Media.Newspaper %>Newspaper, <% end_if %> 														
 								<% if $Media.Television %>Television, <% end_if %> 							
 								<% if $Media.Magazine %>Magazines, <% end_if %> 														
 								<% if $Media.KidsMagazine %>KidsMagazine <% end_if %> 															
 							</div>							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Media.Others %>others : $Media.Specify<% end_if %> 								
 							</div>
 						</div>	    
@@ -345,8 +352,8 @@
 						<% end_if %>																							
 
 						<% if $Loan %>
-				        <div class="row">
-						    <div class="large-12 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-12 cell">
 								Has Loan : $Loan.OnLoan()							
 							</div>										
 						</div>				
@@ -362,14 +369,14 @@
 						<% end_if %>																							
 						
 						<% if $Saving %>						
-				        <div class="row">
-						    <div class="large-6 columns">
+				        <div class="grid-x grid-padding-x">
+						    <div class="large-6 cell">
 								<% if $Saving.EducationFund %>EducationFund, <% end_if %> 														
 								<% if $Saving.LifeInsurance %>LifeInsurance, <% end_if %> 							
 								<% if $Saving.HealthInsurance %>HealthInsurance, <% end_if %> 														
 								<% if $Saving.DeathFund %>DeathFund <% end_if %> 															
 							</div>							
-						    <div class="large-6 columns">
+						    <div class="large-6 cell">
 								<% if $Saving.Others %>others : $Saving.Specify<% end_if %> 								
 							</div>
 						</div>	    

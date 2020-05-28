@@ -95,6 +95,16 @@
 									<div class="large-4 cell">
 									</div>	
 								</div>
+
+								<div class="grid-x grid-padding-x">											
+									<div class="large-12 cell">
+										<% with $Remark %>
+												<label for="$ID">$Title</label> $Field		
+										<% end_with %>
+									</div>										
+									
+								</div>
+
 																
                             <% end_with %>		<%-- with $FieldMap --%>						
 						
