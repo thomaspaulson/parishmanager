@@ -870,9 +870,9 @@ decamelize@^1.1.1, decamelize@^1.1.2:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-extend@^0.5.1:
   version "0.5.1"
@@ -2582,10 +2582,10 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-motion-ui@~2.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/motion-ui/-/motion-ui-2.0.3.tgz#3a87f8fea4512d654c0822a0b346f23dadf0d0b7"
-  integrity sha512-f9xzh/hbZTUYjk4M7y1aDcsiPTfqUbuvCv/+If05TSIBEJMu3hGBU+YSe9csQPP7WBBHXxjossEygM/TJo2enw==
+motion-ui@^2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/motion-ui/-/motion-ui-2.0.4.tgz#3d9423c26b76e577da19b5f0915fea067433bf1a"
+  integrity sha512-7GjtcXXqRHUQGH9Gm8KLbvx9sz5tNGlftsaJ/J5d4q33PzfgKnUm+OynDji4VR3fiZXPT3nMkzBQlZsifYTIOg==
 
 ms@2.0.0:
   version "2.0.0"
